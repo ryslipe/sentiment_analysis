@@ -497,6 +497,25 @@ files = [
 ]
 
 [[package]]
+name = "textblob"
+version = "0.19.0"
+description = "Simple, Pythonic text processing. Sentiment analysis, part-of-speech tagging, noun phrase parsing, and more."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "textblob-0.19.0-py3-none-any.whl", hash = "sha256:af6b8827886f1ee839a625f4865e5abb1584eae8db2259627b33a6a0b02ef19d"},
+    {file = "textblob-0.19.0.tar.gz", hash = "sha256:0a3d06a47cf7759441da3418c4843aed3797a998beba2108c6245a2020f83b01"},
+]
+
+[package.dependencies]
+nltk = ">=3.9"
+
+[package.extras]
+dev = ["pre-commit (>=3.5,<4.0)", "textblob[tests]", "tox"]
+docs = ["PyYAML (==6.0.2)", "sphinx (==8.0.2)", "sphinx-issues (==4.1.0)"]
+tests = ["numpy", "pytest"]
+
+[[package]]
 name = "threadpoolctl"
 version = "3.5.0"
 description = "threadpoolctl"
@@ -571,4 +590,4 @@ scikit-learn = ["scikit-learn"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f5bd071d44e55c5dfa6707bd4b9af31ab769390a9f20adb671dc156b9b20202b"
+content-hash = "e03052ae1678f4ac4a8aae1cfebcc5974777812a40fbd65dda7755f1fd7bf719"
